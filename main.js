@@ -20,3 +20,22 @@ for(var i=0;i<fruits.length;i++){
 }
 var arrayElm=document.getElementById(`arrayTest`);
 arrayElm.innerHTML=fruitsStr;
+
+var fruitElms=document.getElementsByClassName(`fruit`);
+for(var i=0;i<fruitElms.length;i++){
+    var fruitElm=fruitElms[i];
+    console.log(fruitElm.textContent);
+}
+var colerObj={
+    red:`あか`,
+    green:`みどり`,
+    blue:`あお`,
+};
+console.log(colerObj[`red`]);
+console.log(colerObj.red);
+console.log(colerObj.blue);
+
+colerObj[`red`]=`レッド`;
+console.log(colerObj.red) //=> レッド
+colerObj.blue=`ブルー`;
+console.log(colerObj.blue) //=> ブルー
