@@ -1,5 +1,7 @@
-function stopWatch(options = {}) {
-    const addMessage = (message) => {
+function stopWatch(options = {}) {//分割代入
+    // function stopWatch(options) { //デフォルト引数
+    const addMessage = (message) => {//アロー関数
+        // const addMessage = function(message) { //通常の関数
         const messageElm = document.createElement('div');
         const now = new Date();
         messageElm.innerText = now.getHours() + '時' + now.getMinutes() + '分' + now.getSeconds() + '秒 ' + message;
@@ -7,7 +9,8 @@ function stopWatch(options = {}) {
         logElm.appendChild(messageElm);
     };
 
-    let {color, backgroundColor} = options;
+    let {color, backgroundColor} = options;//分割代入
+    // options = options || {}//デフォルト引数
     color = options.color || 'lightblue';
     backgroundColor = options.backgroundColor || 'black';
     const displayElm = document.getElementsByClassName('display')[0];
