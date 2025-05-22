@@ -14,7 +14,7 @@ startButton.addEventListener("click", function () {
         var message = `開始`
         var messageElm = document.createElement("div");
         messageElm.innerText = message;
-        var logElm = appendChild(messageElm);
+        logElm = appendChild(messageElm);
     }
 });
 var stopButton = document.getElementsByClassName("stopButton")[0];
