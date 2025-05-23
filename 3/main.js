@@ -2,9 +2,9 @@ class PhotoViewer {
     init() {
         const rootElm = document.getElementById(`photoViewer`);
         const frameElm = rootElm.querySelector(`.frame`);
-        const image = `https://fakeimg.pl/256×150/81DAF5`;
+        const image = `https://fakeimg.pl/250x150/81DAF5`;
 
-        frameElm.innerHTLM = `
+        frameElm.innerHTML = `
         <div class ="currentImage">
             <img src="${image}" />
         </div>
