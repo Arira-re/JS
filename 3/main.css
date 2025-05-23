@@ -1,0 +1,16 @@
+#photoViewer {
+    margin: 0 auto;
+    width: 20em;
+}
+.action {
+    margin-top: 5px;
+    text-align: center;
+}
+.currentImage {
+    text-align: center;
+}
+.image {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
