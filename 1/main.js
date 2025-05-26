@@ -46,6 +46,6 @@ function stopWatch(options) {
 var options = {
     color: 'limegreen',
     backgroundColor: '#333'
-}; // --- [〜3]
+};
 stopWatch(options);
 //stopWatch();
